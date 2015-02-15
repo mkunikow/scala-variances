@@ -20,6 +20,7 @@ object part1 extends App {
     // error found : Company[SmallCompany] required: Company[BigCompany]
   }
 
+  //  Covariant subtyping means: if S is a subtype of T then Company[S] is subtype of Company[T].
   {
     class Company[+T](val company:T)
     class BigCompany
